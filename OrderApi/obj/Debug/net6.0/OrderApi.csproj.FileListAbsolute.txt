@@ -85,3 +85,9 @@ G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\obj\Debug\net6.0\OrderApi.pd
 G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\obj\Debug\net6.0\OrderApi.genruntimeconfig.cache
 G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\obj\Debug\net6.0\ref\OrderApi.dll
 G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\Autofac.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\MassTransit.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\MassTransit.Abstractions.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\MassTransit.AutofacIntegration.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\OrderApi\bin\Debug\net6.0\RabbitMQ.Client.dll

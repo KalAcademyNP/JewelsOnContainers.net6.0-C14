@@ -39,3 +39,10 @@ G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\obj\Debug\net6.0\refint\CartA
 G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\obj\Debug\net6.0\CartApi.pdb
 G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\obj\Debug\net6.0\CartApi.genruntimeconfig.cache
 G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\obj\Debug\net6.0\ref\CartApi.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\Autofac.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\MassTransit.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\MassTransit.Abstractions.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\MassTransit.AutofacIntegration.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\RabbitMQ.Client.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\CartApi\bin\Debug\net6.0\System.Text.Json.dll

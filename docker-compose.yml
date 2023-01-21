@@ -44,6 +44,12 @@ services:
     build:
       context: .\CartApi
       dockerfile: Dockerfile
+    logging:
+      driver: "json-file"
+      options: {
+        max-size: "200k",
+        max-file: "10"
+      }
     environment:
       IdentityUrl: http://192.168.1.109:7800
       ConnectionString: basket.data
@@ -56,12 +62,19 @@ services:
     depends_on:
       - tokenserver
       - basket.data
+      - rabbitmq
 
   order:
     image: jewels/orderapi
     build:
       context: .\OrderApi
       dockerfile: Dockerfile
+    logging:
+      driver: "json-file"
+      options: {
+        max-size: "200k",
+        max-file: "10"
+      }
     environment:
       IdentityUrl: http://192.168.1.109:7800
       ConnectionString: "Data Source=ordersqlserver;Initial Catalog=OrdersDb;User Id=sa;Password=ProductApi123(!);Connect Timeout=30;TrustServerCertificate=false;Encrypt=false;"
@@ -74,12 +87,19 @@ services:
     depends_on:
       - tokenserver
       - ordersqlserver
+      - rabbitmq
 
   webmvc:
     image: jewels/webmvc
     build:
       context: .\WebMvc
       dockerfile: Dockerfile
+    logging:
+      driver: "json-file"
+      options: {
+        max-size: "200k",
+        max-file: "10"
+      }
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       CatalogUrl: http://catalog
@@ -143,3 +163,14 @@ services:
     container_name: basketdata
     networks:
       - backend
+
+  rabbitmq:
+    image: rabbitmq:3
+    container_name: rabbitmq
+    hostname: myrabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+      - "5671:5671"
+    networks:
+      - backend 

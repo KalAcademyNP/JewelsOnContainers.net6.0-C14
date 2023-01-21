@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using MassTransit;
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -33,6 +35,25 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = false
     };
     options.Audience = "order";
+});
+
+
+builder.Services.AddMassTransit(cfg =>
+{
+    cfg.AddBus(provider =>
+    {
+        return Bus.Factory.CreateUsingRabbitMq(rmq =>
+        {
+            rmq.Host(new Uri("rabbitmq://rabbitmq"), "/", h =>
+            {
+                h.Username("guest");
+                h.Password("guest");
+            });
+            rmq.ExchangeType = ExchangeType.Fanout;
+            MessageDataDefaults.ExtraTimeToLive = TimeSpan.FromDays(1);
+        });
+
+    });
 });
 
 

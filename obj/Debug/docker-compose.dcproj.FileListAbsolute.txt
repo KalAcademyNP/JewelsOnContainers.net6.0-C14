@@ -80,3 +80,8 @@ G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\Stripe.net.dll
 G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\System.Configuration.ConfigurationManager.dll
 G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\System.Security.Cryptography.ProtectedData.dll
 G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\OrderApi.pdb
+G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\System.Text.Json.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\MassTransit.RabbitMqTransport.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\MassTransit.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\MassTransit.Abstractions.dll
+G:\Github\SWC14\Updated\JewelsOnContainers\bin\Debug\RabbitMQ.Client.dll
